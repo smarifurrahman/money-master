@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    fontFamily: {
+                        roboto: ['Roboto', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-[roboto] w-11/12 mx-auto">
+    <header>
+        <h1 class="text-5xl text-[#31A5AC] text-center font-bold font-[montserrat] py-9">Money Master💰 </h1>
+    </header>
+    <main>
+        <section class="flex flex-col md:flex-row gap-5 lg:gap-14">
+            <div class="w-full md:w-1/2 h-[700px] bg-[#F8F8F8] bg-[url('./images/money.jpg')] bg-cover">
+            </div>
+            <div class="w-full md:w-1/2 h-[700px] bg-[#F8F8F8] py-10 px-6 text-center">
+                <div>
+                    <h3 class="text-xl font-medium my-5">Income</h3>
+                    <div class="flex justify-center">
+                        <h4 class="text-lg mr-3">Income:</h4>
+                        <input class="bg-[#DCDCDC] px-4 py-1" type="text">
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium my-5">Expense</h3>
+                    <div>
+                        <div class="flex justify-center">
+                            <h4 class="text-lg mr-3">Food:</h4>
+                            <input class="bg-[#DCDCDC] px-4 py-1 mb-5" type="text">
+                        </div>
+                        <div class="flex justify-center">
+                            <h4 class="text-lg mr-3">Rent:</h4>
+                            <input class="bg-[#DCDCDC] px-4 py-1 mb-5" type="text">
+                        </div>
+                        <div class="flex justify-center">
+                            <h4 class="text-lg mr-3">Clothes:</h4>
+                            <input class="bg-[#DCDCDC] px-4 py-1 mb-5" type="text">
+                        </div>
+                    </div>
+                    <button class="bg-[#59A5FF] text-white text-lg py-2 px-8 rounded">Calculate</button>
+                    <h3 class="text-xl font-medium mt-5 mb-3">Total Expense: <span></span></h3>
+                    <h3 class="text-xl font-medium mb-5">Balance: <span></span></h3>
+                    <div class="flex justify-center">
+                        <h4 class="text-lg mr-3">Save:</h4>
+                        <input class="bg-[#DCDCDC] px-4 py-1 w-24" type="text">
+                        <h4 class="text-lg mx-3">%</h4>
+                        <button class="bg-[#59A5FF] text-white text-lg h-fit rounded px-8 py-1">Save</button>
+                    </div>
+                    <h3 class="text-xl font-medium mt-5 mb-3">Saving Amount: <span></span></h3>
+                    <h3 class="text-xl font-medium mb-5">Remaining Balance: <span></span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center my-10"><p>Money Master &copy; 2023</p></div>
+    </footer>
+</body>
+
+</html>
